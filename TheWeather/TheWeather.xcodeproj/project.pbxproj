@@ -20,6 +20,7 @@
 		9A3743D929A5C6DA00EE69E3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3743D829A5C6DA00EE69E3 /* NetworkManager.swift */; };
 		9A3743DB29A5C76A00EE69E3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3743DA29A5C76A00EE69E3 /* Weather.swift */; };
 		9A3743DD29A5CA9400EE69E3 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3743DC29A5CA9400EE69E3 /* WeatherViewController.swift */; };
+		9A7B99D629A5E630005784E3 /* WeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B99D529A5E630005784E3 /* WeatherCondition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9A3743D829A5C6DA00EE69E3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9A3743DA29A5C76A00EE69E3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		9A3743DC29A5CA9400EE69E3 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		9A7B99D529A5E630005784E3 /* WeatherCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCondition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				9A3743D629A5C67200EE69E3 /* APIConstants.swift */,
 				9A3743D829A5C6DA00EE69E3 /* NetworkManager.swift */,
 				9A3743DA29A5C76A00EE69E3 /* Weather.swift */,
+				9A7B99D529A5E630005784E3 /* WeatherCondition.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7B99D629A5E630005784E3 /* WeatherCondition.swift in Sources */,
 				9A3743D929A5C6DA00EE69E3 /* NetworkManager.swift in Sources */,
 				9A3743D729A5C67200EE69E3 /* APIConstants.swift in Sources */,
 				9A3743A229A5BC0F00EE69E3 /* ViewController.swift in Sources */,

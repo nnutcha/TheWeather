@@ -16,13 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-fv-rCX">
-                                <rect key="frame" x="66" y="193.33333333333334" width="261" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-fv-rCX">
+                                <rect key="frame" x="36" y="193.33333333333334" width="321" height="34"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZ6-Zv-fBS">
-                                <rect key="frame" x="106" y="235.33333333333334" width="181" height="34.333333333333343"/>
+                                <rect key="frame" x="106.00000000000001" y="235.33333333333334" width="171.33333333333337" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="See the weather !!!!"/>
                                 <connections>
@@ -35,64 +36,75 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="Kgv-a8-q76">
-                                <rect key="frame" x="50" y="309.66666666666669" width="293" height="48.666666666666686"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7n-SF-frj">
+                                <rect key="frame" x="50" y="369.66666666666669" width="293" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5wP-NQ-tRE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Convert to Celsius"/>
+                                <connections>
+                                    <action selector="convertButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HU8-3t-tfK"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TrM-5V-Ykv">
+                                <rect key="frame" x="20" y="289.66666666666669" width="97" height="48.666666666666686"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TrM-5V-Ykv">
-                                        <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="48.666666666666664"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxJ-ZO-1o3">
-                                                <rect key="frame" x="9" y="0.0" width="97" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIY-sL-tBk">
-                                                <rect key="frame" x="36.666666666666671" y="28.333333333333314" width="41.333333333333329" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ov5-1f-76h">
-                                        <rect key="frame" x="224.66666666666671" y="0.0" width="68.333333333333343" height="48.666666666666664"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYO-wa-DIN">
-                                                <rect key="frame" x="0.0" y="0.0" width="68.333333333333329" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opC-Yu-dkp">
-                                                <rect key="frame" x="0.0" y="28.333333333333314" width="68.333333333333329" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxJ-ZO-1o3">
+                                        <rect key="frame" x="0.0" y="0.0" width="97" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIY-sL-tBk">
+                                        <rect key="frame" x="44.666666666666671" y="28.333333333333314" width="7.6666666666666643" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ov5-1f-76h">
+                                <rect key="frame" x="304.66666666666669" y="289.66666666666669" width="68.333333333333314" height="48.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYO-wa-DIN">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.333333333333329" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opC-Yu-dkp">
+                                        <rect key="frame" x="0.0" y="28.333333333333314" width="68.333333333333329" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DTb-Vv-131"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DTb-Vv-131" firstAttribute="trailing" secondItem="Kgv-a8-q76" secondAttribute="trailing" constant="50" id="7R1-pY-LlL"/>
                             <constraint firstItem="Bto-Nq-hmp" firstAttribute="top" secondItem="DTb-Vv-131" secondAttribute="top" constant="100" id="9Fo-fU-dve"/>
                             <constraint firstItem="TMw-fv-rCX" firstAttribute="top" secondItem="Bto-Nq-hmp" secondAttribute="bottom" constant="8" id="KIF-G6-p3r"/>
-                            <constraint firstItem="Kgv-a8-q76" firstAttribute="top" secondItem="sZ6-Zv-fBS" secondAttribute="bottom" constant="40" id="LwI-Xc-DhL"/>
                             <constraint firstItem="Bto-Nq-hmp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mh2-ed-VTq"/>
                             <constraint firstItem="sZ6-Zv-fBS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="Mn1-EW-0rG"/>
-                            <constraint firstItem="TMw-fv-rCX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="YmX-A5-C8m"/>
-                            <constraint firstItem="Kgv-a8-q76" firstAttribute="leading" secondItem="DTb-Vv-131" secondAttribute="leading" constant="50" id="dmO-yZ-udJ"/>
+                            <constraint firstItem="TrM-5V-Ykv" firstAttribute="leading" secondItem="DTb-Vv-131" secondAttribute="leading" constant="20" id="ORT-We-Y9j"/>
+                            <constraint firstItem="TrM-5V-Ykv" firstAttribute="top" secondItem="sZ6-Zv-fBS" secondAttribute="bottom" constant="20" id="PfL-ym-bnM"/>
+                            <constraint firstItem="a7n-SF-frj" firstAttribute="leading" secondItem="DTb-Vv-131" secondAttribute="leading" constant="50" id="QPk-py-qf2"/>
+                            <constraint firstItem="TMw-fv-rCX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="YmX-A5-C8m"/>
+                            <constraint firstItem="DTb-Vv-131" firstAttribute="trailing" secondItem="a7n-SF-frj" secondAttribute="trailing" constant="50" id="a1H-4a-FUg"/>
+                            <constraint firstItem="a7n-SF-frj" firstAttribute="top" secondItem="sZ6-Zv-fBS" secondAttribute="bottom" constant="100" id="j4m-WD-GDp"/>
+                            <constraint firstItem="Ov5-1f-76h" firstAttribute="top" secondItem="sZ6-Zv-fBS" secondAttribute="bottom" constant="20" id="pbs-Fg-buu"/>
+                            <constraint firstItem="DTb-Vv-131" firstAttribute="trailing" secondItem="Ov5-1f-76h" secondAttribute="trailing" constant="20" id="pre-q3-MkD"/>
                             <constraint firstItem="sZ6-Zv-fBS" firstAttribute="top" secondItem="TMw-fv-rCX" secondAttribute="bottom" constant="8" id="xLZ-Zu-uBd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sZ6-Zv-fBS" secondAttribute="trailing" constant="90" id="zBd-cg-3Zc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TMw-fv-rCX" secondAttribute="trailing" constant="50" id="zhE-nK-Qwf"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="sZ6-Zv-fBS" secondAttribute="trailing" id="zBd-cg-3Zc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TMw-fv-rCX" secondAttribute="trailing" constant="20" id="zhE-nK-Qwf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cityTextField" destination="TMw-fv-rCX" id="b4N-bs-scn"/>
+                        <outlet property="convertButton" destination="a7n-SF-frj" id="hXT-ZM-nQS"/>
                         <outlet property="humidityLabel" destination="opC-Yu-dkp" id="vth-qd-NU2"/>
                         <outlet property="temperatureLabel" destination="vIY-sL-tBk" id="aJC-1L-aCs"/>
                     </connections>
